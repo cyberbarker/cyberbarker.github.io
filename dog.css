@@ -1,0 +1,126 @@
+body{
+    background-color: #ffffb3;
+    margin: 0;
+    padding: 0;
+
+}
+
+.dog {
+    background-color: #e08403;
+    height: 75px;
+    width: 120px;
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    border-radius: 0px 0px 0px 120px;
+}
+
+.body{
+    background-color: #fdb44e;
+    height: 100px;
+    width: 180px;
+    position: relative;
+    top: 55px;
+    left: 70px;
+    border-radius: 0px 0px 0px 60px;
+}
+
+.leg1 , .leg2 , .leg3 , .leg4 {
+    background-color: #fdb44e;
+    height: 50px;
+    width: 20px;
+    position: relative;
+    border-radius: 0 0 30% 30%;
+}
+
+.leg1 {
+    left: 110px;
+    top: 100px;
+    right: 60px;
+
+}
+
+.leg2 {
+   left: 80px;
+   top: 50px; 
+}
+
+.leg3 {
+    top: -3px;
+    right: -40px;
+   
+}
+.leg4 {
+    left: 152px;
+    bottom: 50px;
+}
+.tail {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 100px solid #fdb44e;
+    position: relative;
+    bottom: 130px;
+    left: 230px;
+    transform: rotate(30deg);
+    transform-origin: bottom;
+    animation: wag 1s infinite;
+
+
+}
+
+@keyframes wag{
+    50%{
+        transform: rotate(60deg);
+    }
+}
+
+.ear {
+    background-color: rgba(151, 89, 2, .8);
+    width: 45px;
+    height: 90px;
+    border-radius: 0px 0px 100px 100px;
+    position: relative;
+    left: 75px;
+    bottom: 200px;
+}
+
+.nose{
+    background-color: black;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    position: relative;
+    right: 6.5px;
+    bottom: 290px;
+}
+
+.eye {
+    background-color: black;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    left: 40px;
+    bottom: 290px;
+    position: relative;
+}
+
+.tongue{
+    background-color: tomato;
+    height: 20px;
+    width: 9px;
+    border-radius: 10px;
+    position: relative;
+    left: 9px;
+    bottom:280px;
+    transform: rotate(45deg);
+    z-index: -1;
+    animation: move 1s infinite;
+}
+
+@keyframes move{
+    50%{
+        transform: rotate(45deg) translateY(2.5px);
+    }
+}
